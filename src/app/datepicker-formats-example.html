@@ -1,0 +1,26 @@
+<mat-icon style="font-size:24px; padding: 12px">filter_list</mat-icon>
+<mat-form-field appearance="outline">
+  <mat-label>Attribute</mat-label>
+  <mat-select>
+    <mat-option value="option">Option</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>Start date</mat-label>
+  <input matInput [matDatepicker]="start">
+  <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
+  <mat-datepicker #start></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>End date</mat-label>
+  <input matInput [matDatepicker]="end">
+  <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
+  <mat-datepicker #end></mat-datepicker>
+</mat-form-field>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
