@@ -11,6 +11,7 @@ import {DemoMaterialModule} from './app/material-module';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 
 import {DatepickerFormatsExample} from './app/datepicker-formats-example';
+import {TableBasicExample} from './app/table-basic-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -25,9 +26,9 @@ import {DatepickerFormatsExample} from './app/datepicker-formats-example';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [DatepickerFormatsExample],
-  declarations: [DatepickerFormatsExample],
-  bootstrap: [DatepickerFormatsExample],
+  entryComponents: [DatepickerFormatsExample, TableBasicExample],
+  declarations: [DatepickerFormatsExample, TableBasicExample],
+  bootstrap: [DatepickerFormatsExample, TableBasicExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
